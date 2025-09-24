@@ -1,0 +1,59 @@
+{
+	// Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Use Tabulator to jump to the next placholder
+
+	//get the pyhton snippet extension from "Vaisakh Pisharody"
+
+
+	 "NGUI main": {
+	 	"prefix": "ngui-!",
+	 	"body": [
+	 		"from nicegui import ui, app;",
+	 		"",
+			"",
+			"",
+			"",
+			"@ui.page('/main')",
+			"def main():",
+			"   ui.dark_mode(True)",
+			"",
+			"",
+			"   with ui.column().classes('items-center justify-center w-full').style('margin-top: 50px; top: 40%;'):",
+			"      ui.label('${1:label}').classes('font-bold').style('font-size: 40px;')",
+			"",
+			"",
+			"$0",
+			"",
+			"",
+			"ui.navigate.to('/main')",
+			"ui.run(title='${2:Your App Title}', native=True)",
+			
+	 	],
+		"description": "Nicegui main structure"
+	 },
+
+	 "if-main": {
+	 	"prefix": "if-main",
+	 	"body": [
+	 		"if __name__ == '__main__':",
+	 		"   $1"
+	 	],
+		
+		"description": "if __name__ == '__main__': structure"
+	 },
+
+
+
+	 "NGUI window size": {
+	 	"prefix": "ngui-widow-size",
+	 	"body": [
+	 		"app.native.window_args['resizable'] = False",
+			"# please put this in ui.run(): 'window_size=(/with/, /height/)'"	
+	 	],
+		"description": "Nicegui window size is fixed!"
+	 }
+
+
+
+}
