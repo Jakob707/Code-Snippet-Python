@@ -52,6 +52,14 @@
 			"# please put this in ui.run(): 'window_size=(/with/, /height/)'"	
 	 	],
 		"description": "Nicegui window size is fixed!"
+	 },
+
+	 "NGUI center": {
+	 	"prefix": "ngui-center",
+	 	"body": [
+	 		"with ui.column().classes('items-center justify-center w-full').style('margin-top: 50px; top: 40%;'):",
+	 	],
+		"description": "Nicegui centering things"
 	 }
 
 
