@@ -60,7 +60,24 @@
 	 		"with ui.column().classes('items-center justify-center w-full').style('margin-top: 50px; top: 40%;'):",
 	 	],
 		"description": "Nicegui centering things"
-	 }
+	 },
+
+	 "PySide6 main": {
+	 	"prefix": "pyside-!",
+	 	"body": [
+	 		"from PySide6.QtWidgets import QApplication, QWidget",
+			"import sys",
+			"",
+			"app = QApplication(sys.argv)",
+			"",
+			"window = QWidget()",
+			"window.show()",
+			"$0",
+			"app.exec()"
+			
+	 	],
+		"description": "Pyside6 main structure"
+	 },
 
 
 
